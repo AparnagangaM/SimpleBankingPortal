@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank | Page1</title>
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <header style="height: 50px; width: 100%; margin-top:-8px;background-color: #3b536f;">
+    <div id="logo" style="margin-left: 100px;">
+        <img src="Capture.PNG" alt="" style="width:100px;height:45px">
+        <img src="logo2.jpg" alt="" style="width:50px;height:45px;border-radius: 25%;">
+    </div>
+
+    <div id="menu" style="color: white;margin-left: 300px; margin-top: -50px; ">
+        <ul><li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">Personal</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">NRI</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">SME</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">WholeSale</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">Agri</a></li>
+        </ul>
+    </div>
+
+    <div id="icons" style="margin-top: -40px;margin-left: 900px;">
+        <ul>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 16px; display: inline;">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Locate Us</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 16px; display: inline;">
+                <i class="fa fa-phone" aria-hidden="true"></i>Contact US</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 16px; display: inline;">
+                <i class="fa fa-question" aria-hidden="true"></i>Help</a></li>
+        </ul>
+    </div>
+</header>
+<div id="searchbar" style="height: 60px;background-color: white; padding-top: 5px;">
+    <h3 style="margin-left: 130px;color:#3b536f;margin-top: px;">Welcome!</h3>
+
+    <div id="searchbtn" style="margin-left: 430px;margin-top: -50px;">
+    <input type="text" style="width: 500px;height: 30px;border: 0.5px solid #3b536f;border-radius: 4px;" placeholder=" Search">
+    <button style="width: 30px;height: 30px;background-color: #005593;border-radius: 4px;border: 0.5px solid #3b536f;"><i class="fa fa-search" style="color: white;"></i>
+    </button></div>
+</div>
+<div class="col-1 menu">
+    <table class="tran">
+        <tr> <td><h2>Initiate Transaction</h2></td> </tr><br>
+        <tr><td><input class="tranin" type="text" name="" id="amount" onfocus="this.value=''" placeholder="Enter amt in ₹"></td></tr>
+        <tr><td><select class="tranin" name="" id="option">
+            <option class="tranin" value="-Transaction-">-Transaction-</option>
+            <option class="tranin" value="Deposit">Deposit</option>
+            <option class="tranin" value="Withdraw">Withdraw</option></select></td></tr>
+            <tr><td><input class="tranin" type="text" name="" id="discription" onfocus="this.value=''" value="-Discription-"></td></tr>
+        <tr><td><button class="tranbtn" onclick="return operation()">Process</button></td></tr>
+        <tr><td><span id="err" style="color: red;"></span></td></tr>
+    </table>
+</div>
+<div class="col-2">
+    <table class="bal" >
+        <tr >
+            <td colspan="2" style="background-color: white;">Total Available Balance</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bolder;background-color: white;" >₹ <span id="balance">0.0</span> /-  </td>
+            <td style="background-color: white;"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="col-3 right">
+    <div class="aside">
+        <table id="deposit">
+            <tr>
+                <th style=""><h3>Total Deposit</h3></th>
+                <th colspan="2" id="totalDeposit"><h3></h3></th>
+            </tr>
+            <tr>
+                <td>Time-Date</td>
+                <td>Rupees</td>
+                <td>Discription</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="col-3 right">
+    <div class="aside">
+        <table id="withdraw">
+            <tr>
+                <th><h3>Total Withdraw</h3></th>
+                <th colspan="2" id="totalWithdraw"><h3></h3></th>                
+            </tr>
+            <tr>
+                <td>Time-Date</td>
+                <td>Rupees</td>
+                <td>Discription</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+    
+
+  
+<footer style="height: 100px;background-color: #3b536f;color: white;margin-top: 430px;">
+    <h5 style="margin-left: 100px;padding-top: 20px;">We use cookies to provide a user-friendly experience. By continuing to browse this site, you agree to the use of cookies. To view our cookie policy, click here</h5>
+    <p><i class="fa fa-copyright" aria-hidden="true" style="color: white;margin-left: 100px;"></i>My Bank Ltd.
+    <a href="" style="text-decoration: none;color: white;margin-left: 50px;"> Terms of Condition</a>
+    <a href="" style="text-decoration: none;color: white;margin-left: 50px;">Privacy Policy</a></p>
+</footer>
+</div>
+<script src="page1.js"></script>
+    </body>
+</html>

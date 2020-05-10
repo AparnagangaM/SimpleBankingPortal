@@ -1,0 +1,159 @@
+li{
+    display: inline;
+    padding-left: 8px;
+}
+#scontent{
+    width: 200px;
+    background-color:white;
+    padding-left: 15px;
+}
+select{
+    width: 190px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+body{
+background-color:#F5F5F5;
+}
+a{
+color: white;
+text-decoration: none;
+}
+
+/* transaction calculation  */
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  
+
+/* Amount Transation */
+  .tran
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .tranin, .tranbtn, .tranin
+  {
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:large;
+    font-weight: bolder;
+    color: black;
+    height: 45px;
+    width: 80%;
+    background-color: white;
+}
+  .tranbtn
+  {
+    background-color: rgb(109, 177, 255);
+    color: black;
+    cursor: pointer;
+    border-color: gray;
+  }
+  .tranbtn:hover
+  {
+    background-image: linear-gradient(to bottom, blue, dodgerblue);
+  }
+  .tranbtn:active
+  {
+    border-color: darkblue;
+  }
+
+  .tranin>option
+  {
+    text-align: center;
+    font-weight: normal;
+    color: black;
+  }
+
+
+  .aside {
+    background-color: #3b536f
+    ;
+    padding: 15px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  #totalDeposit,#totalWithdraw{
+      padding-top: 5px;
+  }
+  /* Available Balance */
+.bal td{
+  background-color: rgb(178, 235, 252);
+  font-size: x-large;
+  width: 100%;
+  text-align: left;
+
+}
+.bal td:first-child
+{
+  text-align: center;
+}
+.bal
+{
+  border-collapse: collapse;
+  background-color: white;
+}
+.col-2
+{
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid gray    ;
+  border-radius: 4px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+  /* For desktop: */
+  .col-1 {width: 20%;}
+  .col-2 {width: 22%;}
+  .col-3 {width: 28%;}
+  
+  table{
+    width: 100%;
+    text-align: justify;
+  }
+
+  
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .logo
+  {
+      height: 100px;
+  
+  }
+}
+
+  /* Collapse */
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: white;
+  }
+  
+  

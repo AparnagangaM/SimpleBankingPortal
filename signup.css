@@ -1,0 +1,62 @@
+table{
+    border: 2px solid black;
+    /* background-image: repeating-radial-gradient(#ffeb3b,#a81fbf); */
+    }
+tr{
+    width: 550px;
+    height: 50px;
+    }
+td{
+    padding-left: 15px;
+    }
+#btn1{
+     background-color:rgb(109, 177, 255);
+     height: 40px;
+     width: 100px;
+     margin-left: 70px;
+    }
+#btn2{
+     background-color:rgb(109, 177, 255);
+     height: 40px;
+     width: 100px;
+    }
+body{
+    background-image: url('login.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    }
+
+ .capbox {
+	/* background-color: white; */
+	border: #3b536f 0px solid;
+	display: inline-block;
+	*display: inline; zoom: 1; /* FOR IE7-8 */
+	padding: 8px 40px 8px 8px;
+}
+
+.capbox-inner {
+font: bold 11px arial, sans-serif;
+color: #000000;
+/* background-color: white; */
+margin: 5px auto 0px auto;
+padding: 3px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#CaptchaDiv {
+font: bold 17px verdana, arial, sans-serif;
+font-style: italic;
+width: 170px;
+color: #000000;
+background-color: #FFFFFF;
+padding: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#CaptchaInput { margin: 1px 0px 1px 0px; width: 175px; }
+
+                     

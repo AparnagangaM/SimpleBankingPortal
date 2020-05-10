@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project/SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+<body >
+    <center><h1 id="one"><b><u>Sign-Up</u></b></h1> 
+    <div>
+        <form name="signup"  action="Home.html" onsubmit="return checkform(this);">
+        <table>
+            <tr>
+                <td><p>First Name</p> </td>
+                <td><input type="text" id="fn"></td>
+                <td><p id="fnmsg" style="color: red;"></p></td>
+            </tr>
+            <tr>
+                <td><p>Last Name</p></td>
+                <td><input type="text" id="ln"></td>
+                <td><p id="lnmsg" style="color: red;"></p></td>
+            </tr>
+            <tr>
+                <td><p>Gender:</p></td>
+                <td><input type="radio"name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Others  
+                </td>
+                <td><p id="gmsg" style="color: red;border-left: 5px;"></p></td>
+            </tr>
+            <tr> 
+                <td>Email </td>
+                <td><input type="email" id="eml"></td>
+                <td><p id="emlmsg" style="color: red;"></p></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>Phone-Number </td>
+                <td><input type="text" id="phn"></td>
+                <td><p id="phnmsg" style="color: red;"></p></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text"id="cty"></td>
+                <td><p id="ctymsg" style="color: red;"></p></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>State: </td>
+                <td><select id="state" style="width:175px">
+                    <option value=""></option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="A.P">Andra Pradesh</option>
+                    <option value="T.N">Tamil Nadu</option>
+                  </select>
+                  </td>
+                  <td><p id="statemsg" style="color: red;"></p></td>
+                </tr>
+            <tr>
+                <td>Password </td>
+                <td><input type="text" id="psw"></td>
+                <td><p id="pswmsg" style="color: red;"></p></td>
+                <td> </td>
+                </tr>
+                <tr>
+               <td> Confirm Password </td>
+               <td><input type="text" id="cnf"></td>
+               <td><p id="cnfmsg" style="color: red;"></p></td>
+               <td> </td>
+               </tr>
+
+               <br>
+               <tr><td><div class="capbox">Captcha</td>
+                   <td><div id="CaptchaDiv"></div></td></tr>
+               <tr><td><div class="capbox-inner">Type the above number:<br></td>
+               <td><input type="hidden" id="txtCaptcha">
+               <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br></div></div></td></tr>
+<!-- END CAPTCHA -->
+
+            <tr>
+                <td> <input type="submit" value="Submit" id="btn1" onclick="return checkform(this);"></td>
+                 <td> <input type="reset" value="Reset" id="btn2"> </td>
+                 <td><p id="submsg"></p></td>
+                </tr>
+             </table>
+            </form>
+    </div>
+    </center>
+    <script src="signup.js"></script>
+</body>
+</html>

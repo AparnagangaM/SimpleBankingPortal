@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <header style="height: 50px; width: 100%; margin-top:-8px;background-color: #3b536f;">
+    <div id="logo" style="margin-left: 100px;">
+        <img src="Capture.PNG" alt="" style="width:100px;height:43px">
+        <img src="logo2.jpg" alt="" style="width:50px;height:45px;border-radius: 25%;">
+    </div>
+
+    <div id="menu" style="color: white;margin-left: 300px; margin-top: -50px; ">
+        <ul><li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">Personal</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">NRI</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">SME</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">WholeSale</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 20px; display: inline;">Agri</a></li>
+        </ul>
+    </div>
+
+    <div id="icons" style="margin-top: -40px;margin-left: 900px;">
+        <ul>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 16px; display: inline;">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Locate Us</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 16px; display: inline;">
+                <i class="fa fa-phone" aria-hidden="true"></i>Contact US</a></li>
+            <li><a href="" style="text-decoration: none;color: white; font-size: 16px; display: inline;">
+                <i class="fa fa-question" aria-hidden="true"></i>Help</a></li>
+        </ul>
+    </div>
+</header>
+<div id="searchbar" style="height: 60px;background-color: white; padding-top: 5px;">
+    <h3 style="margin-left: 130px;color:#3b536f;margin-top: px;">Welcome!</h3>
+
+    <div id="searchbtn" style="margin-left: 330px;margin-top: -50px;">
+    <input type="text" style="width: 500px;height: 30px;border: 0.5px solid #3b536f;border-radius: 4px;" placeholder=" Search">
+    <button style="width: 30px;height: 30px;background-color: #005593;border-radius: 4px;border: 0.5px solid #3b536f;"><i class="fa fa-search" style="color: white;"></i>
+    </button></div>
+
+     <div id="login" style="margin-top: -30px;margin-left: 830px;"><a href="signup.html">
+    <button type="button" value="Sign In" style="margin-left: 100px;color: white;width: 60px;height: 35px;background-color:rgb(109, 177, 255);border-radius: 4px;border: 0.5px solid #3b536f;">
+  Sign Up</button></a> </div> 
+     <div class="open-btn" >
+      <button class="open-button" onclick="openForm()" style="margin-top: -38px;margin-left:1020px;border-radius: 4px;border: 0.5px solid #3b536f;background-color: rgb(109, 177, 255);"><strong>Login</strong></button>
+    </div>
+    <div class="login-popup">
+      <div class="form-popup" id="popupForm">
+        <form action="page1.html" class="form-container" onsubmit="return login()">
+          <h2>Please Log in</h2>
+          <label for="email">
+          <strong>E-mail/Phone Number</strong>
+          </label>
+          <input type="text" id="email" placeholder="Your Email" name="email" required>
+          <label for="psw">
+          <strong>Password</strong>
+          </label>
+          <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+          <p id="msg" style="color: red;"></p>
+          <button type="submit" class="btn" style="background-color: rgb(109, 177, 255);border-radius: 4px;">Log in</button>
+          <button type="button" class="btn cancel" onclick="closeForm()" style="border-radius: 4px;">Close</button>
+        </form>
+      </div>
+    </div>
+
+    
+</div>
+ <div id="slider">
+     <div id="slide" style="width: 55%;height: 300px;border: 1px solid black;margin-left: 100px;">
+       <marquee behavior="" direction="">
+        <img src="banks1.jpg" alt="" style="width: 60%;height: 298px;">
+         <img src="saving.jpg" alt="" style="width: 60%;height: 298px;">
+          <img src="banks2.jpg" alt="" style="width: 60%;height: 280px;">
+          <img src="banks3.jpg" alt="" style="width: 60%;height: 280px;">
+          <img src="banks4.jpg" alt="" style="width: 60%;height: 280px;">
+        <img src="banks5.png" alt="" style="width: 60%;height: 280px;">
+</marquee> 
+    </div>
+
+    <table style="border:1px solid gray;width:20%;height:300px;padding: 16px 12px 10px 12px;margin-top: -300px;margin-left: 860px;background-color: white;"> 
+        <tr><td id="scontent">What are you looking for? </td></tr>
+        <tr><td id="scontent"><select name="" id="">
+            <option value="">Select Product Type</option>
+            <option value="">Cards</option>
+            <option value="">Accounts</option>
+            <option value="">Deposite</option>
+            <option value="">Loans</option>
+            <option value="">EMI</option>
+            <option value="">FastTag</option>
+            <option value="">Invest</option>
+        </select></td></tr>
+        <tr><td id="scontent"><select name="" id="" value="Select Product">
+            <option value="">Select Product</option>
+            <option value="">Debit cards</option>
+            <option value="">Credit card</option>
+            <option value="">FastTag</option>
+            <option value="">HomeLoan</option>
+        </select></td></tr>
+        <tr><td id="scontent"><input type="button" value="Apply Online" style="width: 190px;height: 30px;color:white;background-color: rgb(109, 177, 255);border-radius: 4px;border: 0.5px solid rgb(109, 177, 255);"></td></tr>
+        <tr><td id="scontent"><input type="button" value="Know More" style="width: 190px;height: 30px;color: rgb(109, 177, 255);border-radius: 4px;"></td></tr>
+        <tr><td style="color: black;" id="scontent">
+        <i class="fa fa-home" aria-hidden="true" style="color: rgb(109, 177, 255);padding-left: 3px;"></i>Calculate Eligibility or EMI
+        </td></tr>
+    </table> 
+ </div>
+  <div id="movingtext" style="height: 35px;background-color: rgb(109, 177, 255);color: white;margin-top: 20px;">
+      <marquee behavior="" direction="" style="margin-top: 10px;">Thank you for choosing Us. You can use 24*7 banking with us in secure way.</marquee>
+
+  </div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'Pay')">Pay</button>
+    <button class="tablinks" onclick="openCity(event, 'Invest')">Invest</button>
+   <button class="tablinks" onclick="openCity(event, 'Save')">Save</button>
+   <button class="tablinks" onclick="openCity(event, 'Borrow')">Borrow</button>
+   <button class="tablinks" onclick="openCity(event, 'Insure')">Insure</button>
+   <button class="tablinks" onclick="openCity(event, 'Shop')">Shop</button>
+  
+  </div>
+  <!--
+  <div id="Home" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  -->
+  <div id="Pay" class="tabcontent">
+    <h3>Pay</h3>
+    <table style="border:0px solid black">
+    <tr><td id="tab">Money Transfer</td>
+    <td id="tab">Cards</td>
+    <td id="tab">Bill Payment</td>
+    <td id="tab">Recharge</td>
+    </tr>
+    </table>
+  </div>
+  
+  <div id="Invest" class="tabcontent">
+    <h3>Invest</h3>
+  <table style="border:0px solid black">
+    <tr><td id="tab">Mutual founds</td>
+    <td id="tab">DEMAT</td>
+    <td id="tab">Bill Payment</td>
+    <td id="tab">Recharge</td>
+    </tr>
+    </table>
+  </div>
+  
+  <div id="Save" class="tabcontent">
+    <h3>Save</h3>
+  <table style="border:0px solid black">
+    <tr><td id="tab">Accounts</td>
+    <td id="tab">Deposite</td>
+    <td id="tab">Safe Deposite Locker</td>
+    </tr>
+    </table>
+  </div>
+  <div id="Borrow" class="tabcontent">
+    <h3>Borrow</h3>
+  <table style="border:0px solid black">
+    <tr><td id="tab">Home Loan</td>
+    <td id="tab">Business Loan</td>
+    <td id="tab">Personal Loan</td>
+    <td id="tab">Vehicle Loan</td>
+    <td id="tab">Loan against Assests</td>
+    <td id="tab">Other Loans</td>
+    </tr>
+    </table>
+  </div>
+  <div id="Insure" class="tabcontent">
+    <h3>Insure</h3>
+  <table style="border:0px solid black">
+    <tr><td id="tab">Life Insurance</td>
+    <td id="tab">Health and Accident</td>
+    <td id="tab">vehicle Insurance</td>
+    </tr>
+    </table></div>
+  <div id="Shop" class="tabcontent">
+    <h3>Shop</h3>
+  <table style="border:0px solid black">
+    <tr><td id="tab">Online Banking</td>
+    <td id="tab">Mobile Banking</td>
+    <td id="tab">UPI Payment</td>
+    </tr>
+    </table></div>
+  <div id="lifestage" style="width: 55%;height: 300px;border:1px solid gray;margin-left: 100px;background-image: url('lifestage.png');background-size: cover;  background-size: 730px 300px;background-repeat: no-repeat;
+  ">
+      <h3 style=""><center>Lifestage Solutions</center></h3>
+        <div style="width: 700px;height: 50px;padding: 16px 16px 10px 16px;border:0px solid #3b536f
+        ;margin-top: -20px; background-image: url()">
+
+        <h4 style="margin-top: -13px;">Planning For Retirement?</h4>
+        <h5>Retirement Savings Plan, Medical Insurances</h5>
+    </div>
+        <div style="width: 700px;height: 50px;padding: 16px 16px 10px 16px;border:0px solid #3b536f
+        ;margin-top:20px">
+            <h4 style="margin-top: -5px;">Getting Married?</h4>
+        <h5>Home Loan, Family Insurances</h5>
+    </div>
+        <div style="width: 700px;height: 50px;padding: 16px 16px 10px 16px;border:0px solid #3b536f;margin-top:20px
+         ">
+            <h4 style="margin-top: -5px;">Starting Own Business?</h4>
+        <h5>Business Loans and Special offer for Women Entraprenur</h5></div>
+        <h5 style="margin-left: 600px;color: rgb(109, 177, 255);margin-top: -1px;">
+            <a href="" style="text-decoration: none;color: rgb(109, 177, 255)">View More</a></h5>
+  </div>
+  <div id="offers" style="width: 20%;height: 300px;border:1px solid gray ;margin-left: 850px;margin-top: -300px;padding: 16px 12px 10px 12px">
+      <h3><center>Offers For You</center></h3>
+      <div id="offers1" style="width: 245px;height: 97px; border: 1px solid gray;padding-left: 15px;background-image: url('savings.jpg');background-size: cover;padding-right: ;"><h3>Bigger Savings</h3><br><h4 style="margin-top: -23px;">on Deposites</h4></div>
+      <div id="offers1" style="width: 245px;height: 97px; border: 1px solid gray;padding-left: 15px;margin-top: 10px;background-image: url('shopping.png');background-size: cover;background-repeat: no-repeat;"><h3> 5% Cashback</h3><br><h4 style="margin-top: -23px;">on Online Transactions</h4></div>
+  </div>
+
+  <div id="latestoffers" style="width: 78%;height:300px;margin-left:100px;border: 0px solid;margin-top:30px">
+    <h3 style><center>Latest Offers</center></h3>
+    <div id="lo1" style="width: 23%; height: 250px;margin-left: 15px;border: 1px solid gray;margin-top: -5px;background-color: white;">
+    <h3 style="margin-left: 10px;">Digital Transactions</h3>
+    <img src="latestoffers1.jpg" alt="" style="width: 200px;height: 160px;margin-left: 15px;margin-top: -5px;">
+    <h5 style="margin-top: -5px;margin-left: 5px;">5% Cashback on Online Transactions</h5>
+    </div>
+
+    <div id="lo2" style="width: 23%; height: 250px;margin-left: 270px;border: 1px solid gray;margin-top: -250px;background-color: white;">
+      <h3 style="margin-left: 10px;">UPI Payments</h3>
+      <img src="upi.jpg" alt="" style="width: 200px;height: 160px;margin-left: 15px;margin-top: -5px;">
+      <h5 style="margin-top: -5px;margin-left: 5px;">Avail the exciting Offers</h5>  
+    </div>
+
+    <div id="lo3" style="width: 23%; height: 250px;margin-left: 525px;border: 1px solid gray;margin-top: -253px;background-color: white;">
+      <h3 style="margin-left: 10px;">Loans on Credit Cards</h3>
+      <img src="loan.jpg" alt="" style="width: 200px;height: 160px;margin-left: 15px;margin-top: -5px;">
+      <h5 style="margin-top: -5px;margin-left: 5px;">Loans within seconds with best offers</h5>  
+    </div>
+
+    <div id="lo4" style="width: 23%; height: 250px;margin-left: 785px;border: 1px solid gray;margin-top: -253px;background-color: white;">
+      <h3 style="margin-left: 10px;">Tax Saving Investments</h3>
+      <img src="tax.jpg" alt="" style="width: 200px;height: 160px;margin-left: 15px;margin-top: -5px;">
+      <h5 style="margin-top: -5px;margin-left: 5px;">Secure Health with top tax saving Insurance</h5>  
+    </div>
+  </div>
+
+  <div id="knowledge" style="width: 78%;height:300px;margin-left:100px;border: 0px solid gray;">
+    <h3 style><center>Learn More</center></h3>
+    <div id="kb1" style="width: 32%;height: 248px;border: 1px solid gray;margin-left: 10px;margin-top: -15px;background-color: white;">
+    <img src="onlinebanking.jpg" alt="" style="width: 325px;height: 200px;">
+    <h4 style="margin-top: -5px;margin-left: 10px;">Details about online and Mobile banking</h4></div>
+
+    <div id="kb2" style="width: 32%;height: 248px;border: 1px solid gray;margin-left: 350px;margin-top: -250px;background-color: white">
+      <img src="tax-saving.jpg" alt="" style="width: 325px;height: 200px;">
+      <h4 style="margin-top: -5px;margin-left: 10px;">More about Tax Saving Investments</h4></div>
+        
+    <div id="kb3" style="width: 32%;height: 248px;border: 1px solid gray;margin-left: 690px;margin-top: -250px;background-color: white">
+      <img src="assistance.jpg" alt="" style="width: 325px;height: 200px;">
+     <h4 style="margin-top: -5px;margin-left: 10px;">Financial assistance for individuals</h4></div>
+  </div>
+
+  <footer style="height: 300px;background-color: #3b536f;color: white;">
+    <table id="tablefcontent">
+      <tr><td id="fcontent">About Us</td>
+        <td id="fcontent">Useful Links</td>
+        <td id="fcontent">Resources</td>
+        <td id="fcontent">Calculators</td>
+        <td id="fcontent">Need Help ?</td>
+        <td id="fcontent">Connect</td></tr>
+
+        <tr><td id="fcontent"><a href="">Overview</a></td>
+          <td id="fcontent"><a href="">Apply for new Account</a></td>
+          <td id="fcontent"><a href="">Glosarry</a></td>
+          <td id="fcontent"><a href="">Personal Loan EMI calculator</a></td>
+          <td id="fcontent"><a href="">FAQ</a></td>
+          <td id="fcontent"><a href=""><i class="fa fa-facebook"></i> Facebook</a></td></tr>
+
+          <tr><td id="fcontent"><a href="">Carriers</a></td>
+            <td id="fcontent"><a href="">Apply for credit card</a></td>
+            <td id="fcontent"><a href="">Learning Center</a></td>
+            <td id="fcontent"><a href="">Vehicle/Housing Loan EMI Calculator</a></td>
+            <td id="fcontent"><a href="">Do not call Registration</a></td>
+            <td id="fcontent"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i>
+              Instagram</a></td></tr>
+  
+            <tr><td id="fcontent"><a href="">Investor relations</a></td>
+                <td id="fcontent"><a href="">Get FastTag</a></td>
+                <td id="fcontent"><a href="">Online services</a></td>
+                <td id="fcontent"><a href="">Education Loan EMI Calculator</a></td>
+                <td id="fcontent"><a href="">Opt for Message Notifications</a></td>
+                <td id="fcontent"><a href=""><i class="fa fa-youtube" aria-hidden="true"></i>
+                  Youtube</a></td></tr>
+    
+                  <tr><td id="fcontent"><a href="">CSR</a></td>
+                    <td id="fcontent"><a href="">Investments</a></td>
+                    <td id="fcontent"><a href="">Feedback</a></td>
+                    <td id="fcontent"><a href="">Fixed Deposite Calculator</a></td>
+                    <td id="fcontent"><a href="">Locate Us</a></td>
+                    <td id="fcontent"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>
+                      Twitter</a></td></tr>
+        
+    </table>
+  <div >
+    <h5 style="margin-left: 100px;">We use cookies to provide a user-friendly experience. By continuing to browse this site, you agree to the use of cookies. To view our cookie policy, click here</h5>
+    <p><i class="fa fa-copyright" aria-hidden="true" style="color: white;margin-left: 100px;"></i>My Bank Ltd.
+    <a href="" style="text-decoration: none;color: white;margin-left: 50px;"> Terms of Condition</a>
+    <a href="" style="text-decoration: none;color: white;margin-left: 50px;">Privacy Policy</a></p>
+
+  </div>
+</footer>
+</div>
+<script src="home.js"></script>
+    </body>
+</html>

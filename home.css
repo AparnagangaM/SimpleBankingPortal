@@ -1,0 +1,162 @@
+li{
+    display: inline;
+    padding-left: 8px;
+}
+#scontent{
+    width: 200px;
+    background-color:white;
+    padding-left: 15px;
+}
+select{
+    width: 190px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+/* Style the tab */
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #3b536f;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+background-color: #3b536f;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+color:white;
+margin-left:80px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: white;
+color:#3b536f;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: white;
+color:#3b536f;
+}
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+margin-left:80px;
+background-color: white;
+
+}
+#tab{
+border:0px solid gray;
+padding-left:15px;
+border-collapse:collapse;
+}
+#lifestage{
+height: 10px;
+border:1px solid red;
+}
+body{
+background-color:#F5F5F5;
+}
+#tablefcontent{
+border: 0px solid gray;
+width: 79%;
+margin-left: 100px;
+
+}
+#fcontent{
+border: 0px solid gray;
+padding-left: 30px;
+padding-right: 30px;
+color: white;
+height: 30px;
+}
+a{
+color: white;
+text-decoration: none;
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* Fix the button on the left side of the page */
+.open-btn {
+display: flex;
+justify-content: left;
+}
+/* Style and fix the button on the page */
+.open-button {
+background-color: #1c87c9;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+opacity: 0.8;
+}
+/* Position the Popup form */
+.login-popup {
+position: relative;
+text-align: center;
+width: 100%;
+}
+/* Hide the Popup form */
+.form-popup {
+display: none;
+position: fixed;
+left: 45%;
+top:5%;
+transform: translate(-45%,5%);
+border: 2px solid #666;
+z-index: 9;
+}
+/* Styles for the form container */
+.form-container {
+max-width: 300px;
+padding: 20px;
+background-color: #fff;
+}
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #eee;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Style submit/login button */
+.form-container .btn {
+background-color: #8ebf42;
+color: #fff;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+/* Style cancel button */
+.form-container .cancel {
+background-color: #cc0000;
+}
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
